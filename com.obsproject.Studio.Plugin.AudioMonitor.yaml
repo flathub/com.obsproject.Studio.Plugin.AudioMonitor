@@ -20,8 +20,11 @@ modules:
         tag: 0.9.3
         commit: 20efc7ef74a2c911e163520514d4a203af86aaab
         x-checker-data:
-          type: git
+          type: json
           is-main-source: true
-          tag-pattern: ^([\d.]+)$
+          url: https://api.github.com/repos/exeldro/obs-audio-monitor/releases/latest
+          tag-query: .tag_name
+          version-query: .tag_name
+          timestamp-query: .published_at
       - type: file
         path: com.obsproject.Studio.Plugin.AudioMonitor.metainfo.xml
