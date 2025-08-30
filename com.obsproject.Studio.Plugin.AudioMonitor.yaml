@@ -17,8 +17,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/exeldro/obs-audio-monitor.git
-        tag: 0.9.4
-        commit: b089fd67f48ddd16f6a5abe5343bccb9574c9d2f
+        tag: 0.10.0
+        commit: 245b0c258b369d6a21986c6037f59bb4a6b0cf62
         x-checker-data:
           type: git
           is-main-source: true
